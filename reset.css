@@ -1,0 +1,46 @@
+/* Remove default margin, padding, and border */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Remove list styles (bullets/numbers) */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove default hyperlink styling */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Remove default heading styles */
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+    font-weight: normal;
+  }
+  
+  /* Remove default paragraph styles */
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remove default form element styles */
+  input, textarea, select, button {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+  }
+  
+  /* Remove default table styles */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  

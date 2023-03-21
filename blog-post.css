@@ -1,0 +1,58 @@
+.parent
+{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1%;
+    margin-left: 26%;
+    margin-right: 26%;
+
+    gap: 3em;
+}
+
+.parent hgroup
+{
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Staatliches";
+}
+
+.parent hgroup h1
+{
+    font-size: 5em;
+    color: black;
+}
+
+.parent hgroup h2
+{
+    font-size: 2em;
+    color: grey;
+}
+
+.parent hgroup figure
+{
+    display: flex;
+    flex-direction: row;
+    font-family: "Playfair Display";
+    gap: 1em;
+}
+
+.parent figure img
+{
+    height: 2.5em;
+}
+
+.parent figure figcaption
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parent article
+{
+    font-family: "Roboto Slab";
+    font-size: 1em;
+    color: black;
+}

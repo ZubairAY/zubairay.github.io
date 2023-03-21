@@ -1,0 +1,234 @@
+body{
+    background-color: linen;
+}
+
+.parent
+{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 3%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.sectOne
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    order: 0;
+}
+
+.sectOne h3
+{
+    font-size: 1.5em;
+    font-family: "Staatliches";
+    padding-bottom: 2%;
+}
+
+.homeTitle
+{
+    order: 0;
+}
+
+.homeTitle hgroup
+{
+    font-family: "Lobster";
+    font-size: 6em;
+    width: 200%;
+}
+
+.homeTitle article
+{
+    font-family: "Playfair Display";
+}
+
+.aboutMe
+{
+    order: 1;
+}
+
+.aboutMe article
+{
+    width: 50%;
+    line-height: 150%;
+    font-family: "Roboto Slab";
+    color: grey;
+    font-size: 1em;
+}
+
+.aboutMe aside
+{
+    font-family: "Staatliches";
+    font-size: 1.2em;
+    margin-top: 1%;
+}
+
+.aboutMe a
+{
+    display: block;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    width: fit-content;
+}
+  
+.aboutMe a::after
+    {
+    content: "";
+    background: white;
+    mix-blend-mode: exclusion;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .3s cubic-bezier(1, 1, 1, 1);
+}
+  
+.aboutMe a:hover::after
+{
+    height: 105%;
+}
+
+.links
+{
+    order: 2;
+}
+
+.links ul
+{
+    line-height: 200%;
+    font-family: "Roboto Slab";
+    font-size: 1em;
+    color: grey;
+}
+
+.links a:hover
+{
+    color: black;
+    transition: 0.3s color ease;
+}
+
+.sectTwo
+{
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    gap: 50px;
+}
+
+.contact
+{
+    display: flex;
+    flex-direction: row;
+    order: 0;
+    height: 50%;
+}
+
+.contact aside
+{
+    order: 0;
+    height: 50%;
+    align-self: flex-end;
+    margin-right: 190px;
+    padding-top: 70px;
+}
+
+.contact hgroup
+{
+    font-size: 2.5em;
+    font-family: "Lobster";
+    width: 300%;
+}
+
+.contact article
+{
+    font-family: "Roboto Slab";
+    width: 300%;
+}
+
+.contact a:active
+{
+    color: grey;
+}
+
+.contact figure
+{
+    order: 1;
+    height: 30em;
+}
+
+.contact figure img
+{
+    height: 30em;
+} 
+
+.downloadCV
+{
+    order: 1;
+    font-size: 2em;
+    font-family: "Roboto Slab";
+    text-align: center;
+    cursor: pointer;
+
+    align-self: left;
+
+    color: black;
+
+    width: 200px;
+    height: 70px;
+    border: 2px solid #333;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    transition: 0.5s;
+}
+  
+.downloadCV::before, .downloadCV::after 
+{
+    position: absolute;
+    background: linen;
+    z-index: -1;
+    transition: 0.8s;
+    content: '';
+}
+  
+.downloadCV::before 
+{
+    width: 180px;
+    height: 70px;
+}
+  
+.downloadCV::after 
+{
+    width: 200px;
+    height: 50px;
+}
+  
+.downloadCV:hover::before 
+{
+    width: 0px;
+    background: linen;
+}
+  
+.downloadCV:hover::after 
+{
+    height: 0px;
+    background: linen;
+}
+  
+.downloadCV:hover 
+{
+    background: linen;
+}
+
+figure img
+{
+    border: 0px solid;
+    border-radius: 10px;
+}

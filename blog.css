@@ -1,0 +1,140 @@
+header
+{
+    position: fixed;
+    width: 98%;
+    z-index: 10;
+    background-color: linen;
+}
+
+footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 98%;
+    z-index: 10;
+    background-color: linen;
+}
+
+.parent
+{
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 6em;
+    margin-top: 2%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.sideSect
+{
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    gap: 1em;
+    border-style:double;
+    padding-right: 2.5em;
+    position:fixed;
+    z-index: 1;
+}
+
+.sideSect hgroup
+{
+    font-family: "Lobster";
+    font-size: 3.8em;
+}
+
+.sideSect article, .sideSect aside
+{
+    font-family: "Roboto Slab";
+    color: grey;
+    font-size: 0.9em;
+}
+
+.sideSect aside li
+{
+    list-style-type: disc;
+    margin-left: 5%;
+    padding-bottom: 2%;
+}
+
+.blogBody
+{
+    width: 65%;
+    height: 100%;
+    margin-left: 30%;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    background-color: linen;
+    z-index: 5;
+}
+
+.blogList
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.blogPost
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 3vh;
+    background-color: #f5e2ce;
+    padding: 1.3em;
+}
+
+.blogPost hgroup
+{
+    display: flex;
+    flex-direction: row;
+    font-family: "Staatliches";
+    justify-content: space-between;
+    font-size: 1.7em;
+}
+
+.blogPost hgroup h3
+{
+    color: grey;
+}
+
+.blogPost article
+{
+    font-family: "Roboto Slab";
+    font-size: 1em;
+}
+
+.addBlog
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 7.5em;
+    justify-content: center;
+    background-color: #f5e2ce;
+}
+
+.addBlog article
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Staatliches";
+    font-size: 3em;
+}
+
+.blogPost, .addBlog
+{
+    transition: all 0.3s ease-in-out;
+}
+
+.blogPost:hover, .addBlog:hover
+{
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0.1em 0.4em rgb(91, 87, 83);
+}
+  
