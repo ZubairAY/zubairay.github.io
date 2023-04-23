@@ -251,7 +251,8 @@ body{
     {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 2vh;
+        width: 47vw;
     }
 
     .homeTitle hgroup
@@ -309,6 +310,7 @@ body{
     {
         display: flex;
         flex-direction: column;
+        width: 47vw;
     }
 
     .contact
