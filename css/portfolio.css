@@ -1,0 +1,241 @@
+@media screen and (min-width: 769px) 
+{
+    .parent
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
+
+        margin-top: 1%;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .aboutMe hgroup
+    {
+        font-family: "Lobster";
+        font-size: 4em;
+        border-bottom: 1px solid;
+    }
+
+    .aboutMe aside
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .aboutMe .aboutMeBody
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutMe .details
+    {
+        font-family: "Roboto Slab";
+        color: rgb(64, 62, 62);
+        margin: 1%;
+        margin-left: 0%;
+        width: fit-content;
+        font-size: 0.9em;
+    }
+
+    .details a:active
+    {
+        color: black;
+    }
+
+    .details section
+    {
+        font-family: "Staatliches";
+        font-size: 1.2em;
+        margin-top: 1%;
+    }
+
+    .downloadCV
+    {
+        padding-top: 10%;
+    }
+
+    .downloadCV a
+    {
+        display: block;
+        color: black;
+        text-decoration: none;
+        position: relative;
+        width: fit-content;
+        font-size: 1.5em;
+    }
+    
+    .downloadCV a::after
+    {
+        content: "";
+        background: white;
+        mix-blend-mode: exclusion;
+        width: 100%;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all .3s cubic-bezier(1, 1, 1, 1);
+    }
+    
+    .downloadCV a:hover::after
+    {
+        height: 105%;
+    }
+
+    .aboutMeBody 
+    {
+        margin-top: 1%;
+        gap: 20px;
+    }
+
+    .aboutMeBody p
+    {
+        font-family: "Roboto Slab";
+    }
+
+    .aboutMe figure
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .skills hgroup
+    {
+        font-family: "Staatliches";
+        font-size: 2em;
+        border-bottom: 1px solid grey;
+    }
+
+    .skills ul
+    {
+        list-style-type: disc;
+        padding-left: 2%;
+        font-family: "Roboto Slab";
+        color: grey;
+        padding-top: 2%;
+        font-size: 1.2em;
+    }
+
+    .skills li
+    {
+        padding-bottom: 1%;
+    }
+
+    .exp hgroup, .awards hgroup
+    {
+        font-family: "Lobster";
+        font-size: 3em;
+        border-bottom: 1px solid;
+    }
+
+    .timeline
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .timeline .table
+    {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 4%;
+        padding-left: 5em;
+        gap: 3em;
+    }
+
+    .timeline article
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .timeline article aside
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 100%;
+    }
+
+    .timeline .year, .timeline .role
+    {
+        font-family: "Staatliches";
+        font-size: 1.5em;
+    }
+
+    .timeline .role
+    {
+        color: grey;
+    }
+
+    .timeline .comp
+    {
+        font-family: "Playfair Display";
+        font-size: 1.3em;
+        width: 300%;
+    }
+
+    .timeline .desc
+    {
+        font-family: "Roboto Slab";
+    }
+
+    .timeline figure
+    {
+        padding-top: 2%;
+        padding-right: 5em;
+        height: 50%;
+    }
+
+    .timeline img
+    {
+        height: 50%;
+    }
+
+    .awards article
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .awards aside
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 5em;
+        padding-right: 5em;
+        padding-top: 2%;
+        gap: 1em;
+    }
+
+    .awards aside div
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 7em;    
+    }
+
+    .awards aside div ul
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        font-family: "Staatliches";
+        font-size: 1.3em;
+    }
+
+    .awards .desc
+    {
+        color: grey;
+        width: 10em;
+    }
+}
