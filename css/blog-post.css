@@ -59,3 +59,58 @@
         color: black;
     }
 }
+
+@media screen and (max-width: 768px)
+{
+    .parent
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+
+    .parent h1, .parent h2
+    {
+        font-family: "Staatliches";
+    }
+
+    .parent h1
+    {
+        font-size: 4vh;
+    }
+
+    .parent h2
+    {
+        font-size: 3vh;
+        color: grey;
+    }
+
+    figure
+    {
+        display: flex;
+        flex-direction: row;
+        font-family: "Playfair Display";
+        gap: 1vh;
+    }
+
+    figure img
+    {
+        height: 4vh;
+    }
+
+    figure figcaption
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.8vh;
+    }
+
+    article
+    {
+        margin-top: 4vh;
+        font-family: "Roboto Slab";
+        font-size: 2vh;
+    }
+}

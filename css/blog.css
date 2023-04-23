@@ -140,3 +140,112 @@
         box-shadow: 0 0.1em 0.4em rgb(91, 87, 83);
     }
 }
+
+@media screen and (max-width: 768px)
+{
+    .parent
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+
+    .sideSect
+    {
+        background-color: linen;
+        border-bottom: 1px solid;
+        position:fixed;
+        z-index: 1;
+    }
+
+    .sideSect hgroup
+    {
+        font-family: "Lobster";
+        font-size: 5vh;
+        background-color: linen;
+    }
+
+    .sideSect div
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2vh;
+        font-family: "Roboto Slab";
+        font-size: 1.5vh;
+        color: grey;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .sideSect aside
+    {
+        display: none;
+    }
+
+    .sideSect article
+    {
+        width: 100%;
+    }
+
+    .blogBody
+    {
+        margin-top: 20vh;
+    }
+
+    .blogList
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vh;
+    }
+
+    .blogPost
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9vh;
+        background-color: #f5e2ce;
+        padding: 1vh;
+    }
+
+    .blogPost hgroup
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: "Staatliches";
+        font-size: 2vh;
+    }
+
+    .blogPost h3
+    {
+        color: grey;
+    }
+
+    .blogPost article
+    {
+        font-family: "Roboto Slab";
+        font-size: 1.5vh;
+    }
+
+    .addBlog
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 8vh;
+        justify-content: center;
+        background-color: #f5e2ce;
+    }
+
+    .addBlog article
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: "Staatliches";
+        font-size: 3vh;
+    }
+}

@@ -144,3 +144,105 @@ body
         background-color: linen;
     }
 }
+
+@media screen and (max-width: 768px)
+{
+    .parent
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+
+    .pageTitle
+    {
+        border-bottom: 1px solid;
+    }
+
+    .pageTitle hgroup
+    {
+        font-family: "Lobster";
+        font-size: 5vh;
+    }
+
+    .body
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vh;
+        gap: 4vh;
+    }
+
+    .contactMe hgroup
+    {
+        font-family: "Staatliches";
+        font-size: 2.5vh;
+    }
+
+    .contactMe article
+    {
+        font-family: "Roboto Slab";
+        font-size: 1.8vh;
+    }
+
+    .contactMe aside
+    {
+        display: none;
+    }
+
+    .contactForm form 
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    .contactForm label
+    {
+        font-family: "Staatliches";
+    }
+
+    .formSect1
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2vh;
+    }
+
+    .formSect2
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    input, textarea
+    {
+        width: 100%;
+        height: 5vh;
+        border: 1px solid;
+        font-family: "Roboto Slab";
+        font-size: 1.7vh;
+        padding: 1vh;
+    }
+
+    textarea
+    {
+        height: 10vh;
+    }
+
+    .fname, .lname, .email, .subject, .message
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 2vh;
+    }
+}

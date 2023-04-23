@@ -326,6 +326,11 @@ body{
         border-radius: 5%;
     }
 
+    .contact aside
+    {
+        margin-top: 3vh;
+    }
+
     .sectTwo hgroup
     {
         font-family: "Lobster";
