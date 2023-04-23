@@ -111,11 +111,17 @@ body
         border-bottom: 1px solid;
         margin-left: 2vh;
         margin-right: 2vh;
-        margin-top: 1vh;
-        /* position: fixed;
-        width: 98%;
-        z-index: 10; */
+        padding-top: 1vh;
+        margin-bottom: 2vh;
+        position: fixed;
+        z-index: 10;
+        width: 93%;
         background-color: linen;
+    }
+
+    .parent
+    {
+        padding-top: 11vh;
     }
 
     header hgroup
@@ -135,5 +141,20 @@ body
     {
         float: left;
         padding-left: 2vh;
+    }
+
+    footer
+    {
+        font-family: "Roboto Slab";
+        font-size: 1.3vh;
+        color: dimgrey;
+        text-align: right;
+        border-top: 0.5px solid dimgrey;
+
+        margin-right: 1%;
+        margin-left: 1%;
+        margin-top: auto;
+        padding-top: 1%;
+        padding-bottom: 1%;
     }
 }
